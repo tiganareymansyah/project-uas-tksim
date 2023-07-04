@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fcfs/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-nav-fcfs">
+        <h1>Kelompok 5</h1>
+        <ul>
+            <li>
+                <a href="./">FCFS</a>
+            </li>
+            <li>
+                <a href="./sjfs/">SJFS</a>
+            </li>
+            <li>
+                <a href="./ps/">PS</a>
+            </li>
+            <li>
+                <a href="./rrs/">RRS</a>
+            </li>
+        </ul>
+    </header>
+    <main class="main-fcfs">
+        <div class="div-form-proses">
+            <h2>Proses</h2>
+            <form name="formProses">
+                <label>Pilih Proses :</label>
+                <select name="proses">
+                    <script>
+                        for(let a = 1; a <= 5; a++) {
+                            document.write("<option>" + a);
+                        }
+                    </script>
+                </select>
+                <div class="div-button-proses">
+                    <button class="button-proses">Enter</button>
+                </div>
+            </form>
+        </div>
+        <div class="div-form-fcfs" id="div-form-fcfs"></div>
+        <div class="div-hasil-fcfs" id="div-hasil-fcfs"></div>
+        <script src="./fcfs/script.js"></script>
+    </main>
+</body>
+</html>

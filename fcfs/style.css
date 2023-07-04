@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* css header */
+
+.header-nav-fcfs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #0aa;
+  color: #000;
+
+  & ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+
+    > li a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    > li a:hover {
+      color: #fff;
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
+
+/* css main */
+
+.main-fcfs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  margin-top: 64px;
+
+  & .div-form-proses {
+    background-color: #0aa;
+    border-radius: 16px;
+    padding: 16px 16px;
+    width: 150px;
+
+    > h2 {
+      text-align: center;
+      letter-spacing: 2px;
+    }
+
+    > form {
+      padding-top: 32px;
+      display: flex;
+      flex-direction: column;
+
+      > label {
+        color: #000;
+        padding-bottom: 8px;
+      }
+
+      > .div-button-proses {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 48px;
+      }
+
+      > .div-button-proses button {
+        width: 64px;
+        height: 32px;
+        padding-inline: 16px;
+        border: none;
+        border-radius: 16px;
+        color: #fff;
+        background-color: #00f;
+        cursor: pointer;
+      }
+    }
+  }
+
+  /* untuk menghilangkan form dari tampilan */
+
+  & .div-form-fcfs {
+    display: none;
+  }
+
+  /* class yang dibuat dari js */
+
+  & .div-form-fcfs1 {
+    background-color: #0aa;
+    border-radius: 16px;
+    padding: 16px 16px;
+    width: 225px;
+
+    > h2 {
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    > form {
+      padding-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      > input {
+        height: 32px;
+        padding-inline: 8px;
+      }
+    }
+  }
+
+  & .div-button-fcfs1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 48px;
+
+    > button {
+      width: 64px;
+      height: 32px;
+      padding-inline: 16px;
+      border: none;
+      border-radius: 16px;
+      color: #fff;
+      background-color: #00f;
+      cursor: pointer;
+    }
+  }
+
+  /* untuk menghilangkan form dari tampilan */
+
+  & .div-hasil-fcfs {
+    display: none;
+  }
+
+  /* class yang dibuat dari js */
+
+  .div-hasil-fcfs1 {
+    background-color: #0aa;
+    border-radius: 16px;
+    padding: 16px 16px;
+    width: 300px;
+
+    & h2 {
+      text-align: center;
+      letter-spacing: 2px;
+    }
+
+    & table {
+      margin-top: 32px;
+      border: 1px solid;
+      border-collapse: collapse;
+      background-color: #fff;
+
+      & th,
+      td {
+        border: 1px solid;
+        padding: 8px;
+        text-align: center;
+      }
+    }
+
+    & .p-gant-chart {
+        margin-top: 32px;
+    }
+
+    & .p-average {
+        margin-top: 16px;
+    }
+  }
+}
